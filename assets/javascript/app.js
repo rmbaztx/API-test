@@ -12,7 +12,7 @@ $(document).ready(function() {
           var $events = $("#events");
           
           $events.html("<i>Loading events, please stand by...</i>");
-      $.get('https://www.eventbriteapi.com/v3/events/search/?token='+token+'&expand=venue'+'&location.address=78613'+'&location.within=10mi'+'&start_date.keyword='+timeFrame, 
+      $.get('https://www.eventbriteapi.com/v3/events/search/?token='+token+'&expand=venue'+'&location.address=78613'+'&location.within=10mi'+'&price=free'+'&start_date.keyword='+timeFrame, 
       function(res) {
               if(res.events.length) {
                   var s = "";
